@@ -21,7 +21,7 @@ const CardSneaker: FC<Props> = ({ data }) => {
           <Link to={`/sneaker/${data.id}`}>
             <img src="src/assets/View_product.png" alt="" />
           </Link>
-          <Link to={`/cart/${data.id}`}>
+          <Link to={`/cart`}>
             <img src="src/assets/Add_cart.png" alt="" />
           </Link>
         </div>

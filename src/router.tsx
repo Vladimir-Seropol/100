@@ -29,7 +29,7 @@ const router = createBrowserRouter([
 			// {path: "#payment",element: <SectionForm />},     
 			// {path: "#contacts",element: <SectionContacts />},
 			// {path: "#review",element: <Review />},
-			{ path: "/cart", element: <Cart /> },
+			{ path: "cart", element: <Cart  /> },
 			{ path: "*", element: <NotFound /> }
 		]
 	}

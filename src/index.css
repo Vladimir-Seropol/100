@@ -2,6 +2,11 @@
 	min-height: 100vh;
     background-color: var(--light-body-color);
 } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 @font-face {
 	font-family: IntroBold;
@@ -69,8 +74,6 @@ transition: background 0.3s ease, color 0.3s ease;
 .container{
 	max-width: var(--max-width);
 	margin: 0 auto;
-	/* padding: 0 16px; */
-	/* transition: all .5s ease; */
 }
 
 h1, h2{
@@ -118,7 +121,10 @@ button{
     
 
 }
+
+.dark h1,
 .dark h2,
+.dark h3,
 .dark p,
 .dark a,
 .dark span,

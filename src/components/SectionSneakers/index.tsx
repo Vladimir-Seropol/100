@@ -13,13 +13,11 @@ const SectionSneakers = () => {
     
     <section className="container"  id="catalog">
       <div className={style.container}>
-        <h1>Каталог</h1>
+        <h2 className={style.title}>Каталог</h2>
         <div className={style.sneakers_block}>
         <Search setFilterValue={setFilterFunction} />
         <CardsSneaker filterFunction={filterFunction} />
 
-        {/* <Search setFilterValue={setFilterValue} />
-        <CardsSneaker filterValue={filterValue} />     */}
         </div>
         
       </div>
