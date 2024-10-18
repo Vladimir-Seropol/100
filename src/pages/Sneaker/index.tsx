@@ -3,11 +3,17 @@ import { useParams } from "react-router-dom";
 import { Sneaker } from "../../types/sneaker";
 import style from "./style.module.css";
 import ButtonRed from "../../components/Buttons/ButtonRed/button";
+import { useNavigate } from "react-router-dom";
 
 const SneakerPage = () => {
   const params = useParams();
   const [sneakerData, setSneakerData] = useState<Sneaker | null>(null);
   const [selectedSize, setSelectedSize] = useState<number | null>(null); // Состояние для выбранного размера
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      navigate("/cart"); // Переход к корзине
+  };
 
   useEffect(() => {
     const getData = async () => {
@@ -56,7 +62,7 @@ const SneakerPage = () => {
                 <span className={style.price}>{sneakerData.price}</span>
                 <span className={style.priceold}>{sneakerData.oldPrice}</span>
                 <div className={style.button}>
-                  <ButtonRed text="Заказать" onClick={() => {}} />
+                  <ButtonRed text="Заказать" onClick={handleClick} />
                 </div>
 
                 <p className={style.text}><img src="/src/assets/Vector.svg" alt="" style={{ width: "15px", marginRight: "5px" }} />Бесплатная доставка до двери</p>

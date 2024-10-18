@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
 	font-family: IntroBold;
 	src: url("./fons/Intro-Bold-Alt.ttf");
@@ -68,7 +69,6 @@ transition: background 0.3s ease, color 0.3s ease;
     max-width: 1920px;
     position: relative;
     margin: 0 auto;
-    /* margin-right: 0; */
 }
 
 .container{

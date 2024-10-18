@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Cart from '../../components/Cart';
 import { Product } from '../../components/Cart/Product.ts';
+import style from './style.module.css';
 
 const CartPage: React.FC = () => {
     const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -21,7 +22,7 @@ const CartPage: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className={style.container}>
             <h1>Магазин</h1>
             <div>
                 <h2>Товары</h2>
